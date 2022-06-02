@@ -1,30 +1,44 @@
 
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body{
+    background-color: black;
+}
+
+.skin{
+    position: relative;
+    background-color: white;
+    width: 1280px;
+    height: 100% !important;
+    margin: auto;    
 }
 
 .header {
     height: 100px;
-
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    
 }
 
 .logo {
     float: left;
     margin-left: 108px;
-    margin-top: 20px;
-}
+    }
 
 .nav {
-    position: absolute;
+    float: right;
     width: 800px;
+    margin-left: 100px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    right: 140px;
-    top: 40px;
+
 }
 
 .nav a{
@@ -33,7 +47,7 @@
 }
 .nav h4 {
     font-family: 'Poppins';
-    margin-left: 40px;
+    margin-right: 40px;
 }
 .nav h4:nth-child(2){
     font-weight: 900;
@@ -42,249 +56,109 @@
     background: black;
     width: 50px;
     height: 1px;
-    transform: translate(92px, 20px);
+    transform: translate(52px, 20px);
 }
 
 .header img {
     position: absolute;
-    right: 111px;
-    top: 40px;
     width: 20px;
     height: 20px;
+    right: 110px;
 }
+/* banner */
 
-h1{
-    font-family: 'Poppins';
-    font-size: 64px;
-    margin-top: 79px;
-    margin-left: 225px;
-    color:  #414141;
-    line-height: 72px;
+.banner{
+    height: 620px;
+    position: relative;
 }
+.banner h1{
+float: left;
+width:100%;
+height:260px;
 
-.banner hr{
-    width: 100px;
-    transform: translate(230px);
-    background-color: black;
-    height: 1px;
-    margin-top: 10px;
-
-}
-
-.twiscode{
-    position: absolute;
-width: 245px;
-height: 72px;
-left: 235px;
-top: 498px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 24px;
-color: #414141;
-}
-
-.hands{
-    position: absolute;
-width: 642px;
-height: 620px;
-right: 0;
-top: 100px;
-}
-
-.vector{
-    background-color: #414141;
-position: absolute;
-    margin-left: 1820px;
-    margin-top: 200px;
-}
-.rectangle{
-    margin-left:1800px;
-    position: absolute;
-    margin-top: 180px;
-    
-    
-}
-
-.rectangle2{
-    position: absolute;
-    right:442px;
-    margin-top: 180px;
-}
-
-.button{
-    position: absolute;
-    margin-left: 1875px;
-    margin-top: 198px;
-    color:white;
-    font-size: 18px;
-    font-family: 'Poppins'
-}
-
-.how-we-work{
-    margin-top: 600px;
-    
-}
-
-.features hr{
-    width: 120px;
-    margin-left: 320px;
-    color: black;
-    height: 1px;
-}
-
-.square1{
-    position: absolute;
-width: 205px;
-height: 205px;
-left: 430px;
-top: 816px;
-}
-
-.square2{
-    position: absolute;
-width: 205px;
-height: 205px;
-left: 225px;
-top: 1021px;
-}
-
-.square3{
-    position: absolute;
-width: 205px;
-height: 205px;
-left: 430px;
-top: 1021px;
-}
-
-.discuss{
-    position: absolute;
-    width: 92px;
-    height: 24px;
-    left: 456px;
-    top: 857px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-}
-
-.planning{
-    position: absolute;
-    width: 107px;
-    height: 24px;
-    left: 254px;
-    top: 1065px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-}
-
-.coding{
-    position: absolute;
-    width: 89px;
-    height: 24px;
-    left: 456px;
-    top: 1065px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-}
-
-.one{
-    position: absolute;
-    width: 101px;
-    height: 72px;
-    left: 528px;
-    top: 942px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 100px;
-    line-height: 72px;
-    color: #E5E5E5;
-
-}
-
-.two{
-    position: absolute;
-    width: 123px;
-    height: 72px;
-    left: 300px;
-    top: 1138px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 100px;
-    line-height: 72px;
-    
-    
-    
-    color: #E5E5E5;
-}
-
-.three{
-    position: absolute;
-    width: 125px;
-    height: 72px;
-    left: 504px;
-    top: 1138px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 100px;
-    line-height: 72px;
-    
-    
-    
-    color: #E5E5E5;
-    
-}
-
-.work{
-    position: absolute;
-width: 325px;
-height: 144px;
-left: 1719px;
-top: 855px;
 
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
 font-size: 64px;
 line-height: 72px;
-}
-
-.text1{
-    line-height: 32px;
-color: #9F9F9F;
-margin-left: 1720px;
-margin-top: 105px;
-font-size: 18px;
-font-family: 'Poppins';
+color: #414141;
+margin-left: 225px;
+padding-top: 80px;
 
 }
-
-.more{
-    height: 60px;
-    width: 170px;
-    background: #4A4A4A;
-    color: white;
+.banner hr{
     border: none;
-    margin-left: 1720px;
-    margin-top: 30px;
+    height: 5px;;
+    width: 100px;
+    background-color: black;
+    display: flex;
+    margin-left: 230px;
+}
+.banner p{
+    margin-left: 230px;
+    width: 230px !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #414141;
+    margin-top: 100px;
+}
+.banner p:nth-of-type(2){
+    margin: auto !important;
+    position: relative;
+    color: red;
+    transform: translate(125px, -138px);
+    z-index: 9999;
+    
+    width: 164px;
+    height: 16px;
+
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    /* identical to box height, or 89% */
+    
+    
+    color: #FFFFFF; 
 }
 
+.btn-box{
+    display: block;
+    position: relative;
+
+    z-index: 4400;
+    margin:auto !important;
+    transform: translate(98px, -100px);
+
+
+}
+.arrow{
+    display: block;
+    position: relative;
+    z-index: 99999999999;
+    margin: auto !important;
+    transform: translate(-35px, -58px) !important;
+}
+
+.banner img:nth-of-type(1){
+    display: block;
+    position: absolute;
+
+    margin: auto !important;
+    margin-left: 567px !important;
+    transform: translate(0px, -82px);
+    z-index: 3333333;
+}
+
+
+.banner img:nth-of-type(3){
+    top:0;
+    position: absolute;
+    right:0;    
+}
